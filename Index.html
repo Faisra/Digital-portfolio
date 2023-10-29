@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your name - Portfolio</title>
+    <title>Faisra.F- Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -93,10 +93,10 @@
     <header>
         <div class="header-content">
             <!-- Add your profile picture here -->
-            <img src="FaisraF.jpg" 
-            alt="Faisra.F"
-            class ="profile_-picture">
-            <h1>Faisra</h1>
+            <img src="Faisra.jpg" 
+            alt=Faisra.F
+          class="profile-picture">
+            <h1>Faisra.F</h1>
             <p>Student</p>
         </div>
     </header>
@@ -114,14 +114,14 @@
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>Hello Everyone! This is Faisra.F and i am a BCA student</p>
+            <p>Hello Everyone! This is Faisra.F and i am a computer applications student.</p>
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
-            <h2>BCA</h2>
-            <p>Vivekananda college of arts and science</p>
+            <h2>Education</h2>
+            <p>Vivekananda college of arts and science for women</p>
         </div>
     </section>
 
@@ -142,8 +142,28 @@
             <h2>Projects</h2>
             <ul>
                 <li><a href="#">qrcode</a></li>
-                <li><a href="#">musicplayer</a></li>
+                <li><a href="#">responsivemusicplayer</a></li>
                 <!-- Add more project links here -->
             </ul>
         </div>
     </section>
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
